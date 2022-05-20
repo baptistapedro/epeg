@@ -18,5 +18,5 @@ RUN mv *.jpg /epegCorpus
 RUN cp /usr/local/bin/epeg /epeg
 ENV LD_LIBRARY_PATH=/usr/local/lib/
 
-ENTRYPOINT ["afl-fuzz", "-i", "/jpegCorpus", "-o", "/jpegOut"]
+ENTRYPOINT ["afl-fuzz", "-i", "/epegCorpus", "-o", "/jpegOut"]
 CMD ["/epeg", "@@", "/dev/null"]
