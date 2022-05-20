@@ -1,7 +1,0 @@
-image: pedbap/epeg-fuzz
-duration: 5000
-project: epeg-fuzz
-target: epeg-fuzzer
-cmds:
-  - cmd: /epeg @@ /dev/null
-    afl: true
